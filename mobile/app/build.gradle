@@ -1,0 +1,79 @@
+plugins { id 'com.android.application' }
+
+def adsApp = System.getenv('ARENA_ADMOB_APP_ID') ?: ''
+def adsUnit = System.getenv('ARENA_ADMOB_INTERSTITIAL_ID') ?: ''
+def testAds = providers.gradleProperty('arenaTestAds').orNull == 'true'
+if ((adsApp || adsUnit) && (!(adsApp ==~ /ca-app-pub-\d{16}~\d{10}/) || !(adsUnit ==~ /ca-app-pub-\d{16}\/\d{10}/))) throw new GradleException('Both valid AdMob public IDs are required')
+if(adsApp && adsUnit && adsApp.split('~')[0] != adsUnit.split('/')[0]) throw new GradleException('AdMob IDs must belong to the same publisher')
+if(adsApp.startsWith('ca-app-pub-3940256099942544') && gradle.startParameter.taskNames.any{it.toLowerCase().contains('release')}) throw new GradleException('Google sample publisher IDs cannot be used for a release')
+if(testAds && gradle.startParameter.taskNames.any{it.toLowerCase().contains('release')}) throw new GradleException('Test ads are debug only')
+def adsOn = testAds || (adsApp && adsUnit)
+android {
+    namespace 'com.bilgiarena.app'
+    compileSdk 36
+    defaultConfig {
+        applicationId 'com.bilgiarena.app'
+        minSdk 26
+        targetSdk 36
+        versionCode 8
+        versionName '1.2.1'
+        manifestPlaceholders = [admobAppId: testAds || !adsOn ? 'ca-app-pub-3940256099942544~3347511713' : adsApp]
+        buildConfigField 'boolean', 'ADS_ENABLED', adsOn ? 'true' : 'false'
+        buildConfigField 'String', 'ADMOB_INTERSTITIAL_ID', '"' + (testAds ? 'ca-app-pub-3940256099942544/1033173712' : adsUnit) + '"'
+        buildConfigField 'String', 'POLICY_VERSION', '"2026-11-01"'
+        buildConfigField 'String', 'ARENA_ORIGIN', '"https://bilgiarena.salihtekin.chatgpt.site"'
+    }
+    buildFeatures { buildConfig true }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+        coreLibraryDesugaringEnabled true
+    }
+    signingConfigs {
+        upload {
+            def keyPath = System.getenv('ARENA_UPLOAD_KEYSTORE')
+            if (keyPath) storeFile file(keyPath)
+            storeType 'PKCS12'
+            storePassword System.getenv('ARENA_UPLOAD_STORE_PASSWORD')
+            keyAlias 'bilgiarena-upload'
+            keyPassword System.getenv('ARENA_UPLOAD_STORE_PASSWORD')
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.upload
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    testOptions {
+        unitTests.includeAndroidResources = true
+        unitTests.all {
+            systemProperty 'robolectric.dependency.repo.url', 'https://repo.maven.apache.org/maven2'
+            ['https.proxyHost','https.proxyPort','http.proxyHost','http.proxyPort','javax.net.ssl.trustStore'].each { key ->
+                if (System.getProperty(key)) systemProperty key, System.getProperty(key)
+            }
+        }
+    }
+}
+
+dependencies {
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.1.5'
+    implementation 'com.google.android.play:integrity:1.6.0'
+    implementation 'com.google.android.gms:play-services-ads:25.5.0'
+    implementation 'com.google.android.ump:user-messaging-platform:4.0.0'
+    constraints {
+        implementation('com.google.guava:guava:33.7.2-android') {
+            because 'Replace the vulnerable 31.1-android transitive dependency (CVE-2020-8908, CVE-2023-2976)'
+        }
+    }
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.robolectric:robolectric:4.16.1'
+}
+
+gradle.taskGraph.whenReady { graph ->
+    if (graph.allTasks.any { it.name in ['assembleRelease','bundleRelease'] } && (!System.getenv('ARENA_UPLOAD_KEYSTORE') || !System.getenv('ARENA_UPLOAD_STORE_PASSWORD'))) {
+        throw new GradleException('Release signing requires ARENA_UPLOAD_KEYSTORE and ARENA_UPLOAD_STORE_PASSWORD; unsigned publication is blocked.')
+    }
+}

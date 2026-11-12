@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-10-31T19:48:29.831738+03:00",
+  "baselineCommit": "4a1d36b55f692e204227f39c5c4c08cf6b73c212",
+  "version": "1.1.0",
+  "serverTests": {
+    "tests": 83,
+    "pass": 83,
+    "fail": 0,
+    "skipped": 0
+  },
+  "typeScriptCheck": true,
+  "serverRenderAndCss": true,
+  "productionBuild": true,
+  "eslintSchemaCompatibility": true,
+  "npmAuditAll": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 1,
+      "high": 0,
+      "critical": 0
+    },
+    "dependencies": 205,
+    "devDependencies": 554,
+    "optionalDependencies": 167,
+    "totalDependencies": 794
+  },
+  "npmAuditProduction": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0
+    },
+    "dependencies": 152,
+    "devDependencies": 0,
+    "optionalDependencies": 88,
+    "totalDependencies": 240
+  },
+  "remainingFindings": [
+    {
+      "package": "minimatch",
+      "severity": "moderate",
+      "url": "https://github.com/advisories/GHSA-g3hv-75wg-m249",
+      "developmentOnly": true
+    }
+  ],
+  "nativeBinaries": {
+    "rebuiltInThisRecovery": false,
+    "sameHashesAsRecordedVerification": true,
+    "priorVerification": "release/verification.json",
+    "priorVerificationRecordedAt": "2026-10-21T13:52:23.079543+00:00",
+    "apkSha256": "d66c8aeada567de16b9ac55ac436ab7c4e2ded61c6991f4fbee25a6d93d96355",
+    "aabSha256": "7d31f1c844c07e21da4f0d81449b7c2930fed4211527f10e00ba079bf1ab7043",
+    "signaturesIndependentlyReverifiedInThisRecovery": false,
+    "priorAndroidTests": {
+      "total": 17,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "packagingNegativeChecks": {
+    "modifiedApkRejected": true,
+    "changedAndroidSourceRejected": true
+  },
+  "interactiveBrowserTested": false,
+  "interactiveBrowserBlocker": "Managed preview URL returned ERR_CONNECTION_REFUSED in the cloud browser. Server-render tests passed.",
+  "physicalAndroidTested": false,
+  "googlePlayUploaded": false,
+  "googlePlayApproved": false,
+  "cashEnabledByThisRecovery": false,
+  "liveAdsEnabledByThisRecovery": false
+}

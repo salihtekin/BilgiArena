@@ -1,0 +1,29 @@
+{
+  "source": "https://api.osv.dev/v1/querybatch",
+  "scope": "release artifact libraries from AGP lint model; excludes build/test tools and desugar toolchain",
+  "coordinates": [
+    "androidx.activity:activity:1.0.0",
+    "androidx.annotation:annotation:1.1.0",
+    "androidx.arch.core:core-common:2.1.0",
+    "androidx.arch.core:core-runtime:2.0.0",
+    "androidx.collection:collection:1.1.0",
+    "androidx.core:core:1.2.0",
+    "androidx.customview:customview:1.0.0",
+    "androidx.fragment:fragment:1.1.0",
+    "androidx.lifecycle:lifecycle-common:2.1.0",
+    "androidx.lifecycle:lifecycle-livedata-core:2.0.0",
+    "androidx.lifecycle:lifecycle-livedata:2.0.0",
+    "androidx.lifecycle:lifecycle-runtime:2.1.0",
+    "androidx.lifecycle:lifecycle-viewmodel:2.1.0",
+    "androidx.loader:loader:1.0.0",
+    "androidx.savedstate:savedstate:1.0.0",
+    "androidx.versionedparcelable:versionedparcelable:1.1.0",
+    "androidx.viewpager:viewpager:1.0.0",
+    "com.google.android.gms:play-services-basement:18.9.0",
+    "com.google.android.gms:play-services-tasks:18.2.0",
+    "com.google.android.play:core-common:2.0.4",
+    "com.google.android.play:integrity:1.6.0"
+  ],
+  "packagesChecked": 21,
+  "vulnerabilityMatches": []
+}

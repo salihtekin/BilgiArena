@@ -1,0 +1,1 @@
+ALTER TABLE `players` ADD `avatar` text DEFAULT 'mint' NOT NULL;

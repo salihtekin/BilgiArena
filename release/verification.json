@@ -1,0 +1,119 @@
+{
+  "version": "1.2.1",
+  "versionCode": 8,
+  "packageName": "com.bilgiarena.app",
+  "targetSdk": 36,
+  "minSdk": 26,
+  "checkedAt": "2026-11-01T00:03:49.460525+00:00",
+  "apkSignatureVerified": true,
+  "aabSignatureVerified": true,
+  "sameUploadCertificate": true,
+  "certificateSha256": "fc2ba776d27fee9990692402865c64e467c3a1fce19eed3d593777e6ebdb4283",
+  "bundletoolValidation": true,
+  "debuggable": false,
+  "permissions": [
+    "android.permission.INTERNET",
+    "android.permission.HIDE_OVERLAY_WINDOWS",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_ADSERVICES_AD_ID",
+    "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+    "android.permission.ACCESS_ADSERVICES_TOPICS",
+    "android.permission.WAKE_LOCK",
+    "android.permission.FOREGROUND_SERVICE",
+    "com.bilgiarena.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "apkSha256": "ea142871b8b36749b5c90152e547a682d69a42943332a914901a2b98eae68df0",
+  "aabSha256": "21f8453e7b63255ace425c64717db0021b236a3ca338125687053531c0666268",
+  "androidSourceSha256": "e617f13f318271380460410b19979dccf63dbb6936849224587003ba87ea63fd",
+  "serverTests": {
+    "total": 127,
+    "passed": 127,
+    "failed": 0
+  },
+  "androidTests": {
+    "total": 30,
+    "failed": 0,
+    "skipped": 0
+  },
+  "androidTestSuites": [
+    {
+      "name": "com.bilgiarena.app.ImprovementsUiTest",
+      "tests": 7,
+      "failed": 0
+    },
+    {
+      "name": "com.bilgiarena.app.AccountUiTest",
+      "tests": 2,
+      "failed": 0
+    },
+    {
+      "name": "com.bilgiarena.app.CommerceUiTest",
+      "tests": 3,
+      "failed": 0
+    },
+    {
+      "name": "com.bilgiarena.app.SecurityTest",
+      "tests": 3,
+      "failed": 0
+    },
+    {
+      "name": "com.bilgiarena.app.NativeUiTest",
+      "tests": 4,
+      "failed": 0
+    },
+    {
+      "name": "com.bilgiarena.app.RecoveryAndRecencyTest",
+      "tests": 6,
+      "failed": 0
+    },
+    {
+      "name": "com.bilgiarena.app.PracticeRoundTest",
+      "tests": 4,
+      "failed": 0
+    },
+    {
+      "name": "com.bilgiarena.app.PlayStoreAssetsTest",
+      "tests": 1,
+      "failed": 0
+    }
+  ],
+  "typescript": true,
+  "serverRenderAndCss": true,
+  "productionNpmAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0
+  },
+  "allNpmAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 1,
+    "high": 0,
+    "critical": 0
+  },
+  "physicalAndroidTested": false,
+  "interactiveBrowserTested": false,
+  "playIntegrityConfigured": false,
+  "googlePlayUploaded": false,
+  "googlePlayApproved": false,
+  "cashEnabled": false,
+  "liveAdsEnabled": false,
+  "manualBankTransferVerified": false,
+  "paymentMode": "manual_operator_confirmation",
+  "googleAdsSdk": "25.5.0",
+  "umpSdk": "4.0.0",
+  "androidDependencyAudit": {
+    "complete": true,
+    "packages": 64,
+    "findings": []
+  },
+  "androidLintErrors": 0,
+  "testAdsDebugBuildCompiled": true,
+  "serverReverifiedAt": "2026-11-03T09:57:41.720915+00:00",
+  "androidRebuiltThisRun": false,
+  "workerdRecoveryIntegration": true
+}

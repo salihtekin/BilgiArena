@@ -1,0 +1,4 @@
+24 Android test / 0 başarısız / 0 atlanan.
+assembleRelease, bundleRelease, lintRelease başarılı.
+Test reklamlı debug APK derlemesi başarılı; yayın APK gerçek reklam kapalı.
+APK/AAB imza ve bundletool kanıtı: release/verification.json

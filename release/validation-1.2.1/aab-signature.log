@@ -1,0 +1,374 @@
+
+sm        57 Thu Jan 01 01:01:02 GMT 1981 BUNDLE-METADATA/com.android.tools.build.gradle/app-metadata.properties
+sm      6187 Thu Jan 01 01:01:02 GMT 1981 BUNDLE-METADATA/com.android.tools.build.libraries/dependencies.pb
+sm    29075622 Thu Jan 01 01:01:02 GMT 1981 BUNDLE-METADATA/com.android.tools.build.obfuscation/proguard.map
+sm      1587 Thu Jan 01 01:01:02 GMT 1981 BUNDLE-METADATA/com.android.tools/r8.json
+sm       628 Thu Jan 01 01:01:02 GMT 1981 BundleConfig.pb
+sm        46 Thu Jan 01 01:01:02 GMT 1981 base/assets.pb
+sm     52577 Thu Jan 01 01:01:02 GMT 1981 base/assets/art/anagram.png
+sm      4434 Thu Jan 01 01:01:02 GMT 1981 base/assets/art/avatar.png
+sm     17962 Thu Jan 01 01:01:02 GMT 1981 base/assets/art/colors.png
+sm     35340 Thu Jan 01 01:01:02 GMT 1981 base/assets/art/math.png
+sm     55570 Thu Jan 01 01:01:02 GMT 1981 base/assets/art/memory.png
+sm     53317 Thu Jan 01 01:01:02 GMT 1981 base/assets/art/prize.png
+sm     48796 Thu Jan 01 01:01:02 GMT 1981 base/assets/art/reverse.png
+sm     16105 Thu Jan 01 01:01:02 GMT 1981 base/assets/art/trivia.png
+sm      4392 Thu Jan 01 01:01:02 GMT 1981 base/assets/fonts/OFL-DelaGothicOne.txt
+sm      4384 Thu Jan 01 01:01:02 GMT 1981 base/assets/fonts/OFL-Rubik.txt
+sm    2477372 Thu Jan 01 01:01:02 GMT 1981 base/assets/fonts/dela.ttf
+sm    174992 Thu Jan 01 01:01:02 GMT 1981 base/assets/fonts/rubik-400.ttf
+sm    175596 Thu Jan 01 01:01:02 GMT 1981 base/assets/fonts/rubik-500.ttf
+sm    175628 Thu Jan 01 01:01:02 GMT 1981 base/assets/fonts/rubik-700.ttf
+sm     13950 Thu Jan 01 01:01:02 GMT 1981 base/assets/legal.json
+sm    4188872 Thu Jan 01 01:01:02 GMT 1981 base/dex/classes.dex
+sm      1220 Thu Jan 01 01:01:02 GMT 1981 base/dex/classes2.dex
+sm     20920 Thu Jan 01 01:01:02 GMT 1981 base/manifest/AndroidManifest.xml
+sm      1105 Thu Jan 01 01:01:02 GMT 1981 base/res/color/common_google_signin_btn_text_dark.xml
+sm      1113 Thu Jan 01 01:01:02 GMT 1981 base/res/color/common_google_signin_btn_text_light.xml
+sm       409 Thu Jan 01 01:01:02 GMT 1981 base/res/color/common_google_signin_btn_tint.xml
+sm       681 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-hdpi-v4/common_full_open_on_phone.png
+sm       897 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png
+sm       683 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-hdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png
+sm       960 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-hdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png
+sm       694 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-hdpi-v4/common_google_signin_btn_text_light_normal_background.9.png
+sm       410 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-hdpi-v4/googleg_disabled_color_18.png
+sm       808 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-hdpi-v4/googleg_standard_color_18.png
+sm       212 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-hdpi-v4/notification_bg_low_normal.9.png
+sm       225 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-hdpi-v4/notification_bg_low_pressed.9.png
+sm       212 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-hdpi-v4/notification_bg_normal.9.png
+sm       225 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png
+sm       107 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png
+sm       610 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png
+sm       500 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-mdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png
+sm       615 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-mdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png
+sm       465 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-mdpi-v4/common_google_signin_btn_text_light_normal_background.9.png
+sm       281 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-mdpi-v4/googleg_disabled_color_18.png
+sm       562 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-mdpi-v4/googleg_standard_color_18.png
+sm       215 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-mdpi-v4/notification_bg_low_normal.9.png
+sm       223 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-mdpi-v4/notification_bg_low_pressed.9.png
+sm       215 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-mdpi-v4/notification_bg_normal.9.png
+sm       223 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png
+sm        98 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png
+sm      2250 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-v21/notification_action_background.xml
+sm       489 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-xhdpi-v4/common_full_open_on_phone.png
+sm      1032 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png
+sm       776 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png
+sm      1086 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png
+sm       808 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-xhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png
+sm       516 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-xhdpi-v4/googleg_disabled_color_18.png
+sm       982 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-xhdpi-v4/googleg_standard_color_18.png
+sm       221 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png
+sm       252 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png
+sm       221 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-xhdpi-v4/notification_bg_normal.9.png
+sm       247 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png
+sm       138 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png
+sm      1510 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png
+sm      1138 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png
+sm      1638 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png
+sm      1255 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png
+sm       727 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-xxhdpi-v4/googleg_disabled_color_18.png
+sm      1441 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable-xxhdpi-v4/googleg_standard_color_18.png
+sm       666 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable/abc_vector_test.xml
+sm      1237 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable/admob_close_button_black_circle_white_cross.xml
+sm      1242 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable/admob_close_button_white_circle_black_cross.xml
+sm       754 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable/admob_close_button_white_cross.xml
+sm      7485 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable/app_mark.png
+sm       844 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable/common_google_signin_btn_icon_dark.xml
+sm      1017 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable/common_google_signin_btn_icon_dark_focused.xml
+sm       567 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable/common_google_signin_btn_icon_dark_normal.xml
+sm      1261 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable/common_google_signin_btn_icon_disabled.xml
+sm       848 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable/common_google_signin_btn_icon_light.xml
+sm      1019 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable/common_google_signin_btn_icon_light_focused.xml
+sm       569 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable/common_google_signin_btn_icon_light_normal.xml
+sm       844 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable/common_google_signin_btn_text_dark.xml
+sm      1017 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable/common_google_signin_btn_text_dark_focused.xml
+sm       659 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable/common_google_signin_btn_text_dark_normal.xml
+sm      1355 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable/common_google_signin_btn_text_disabled.xml
+sm       848 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable/common_google_signin_btn_text_light.xml
+sm      1019 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable/common_google_signin_btn_text_light_focused.xml
+sm       661 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable/common_google_signin_btn_text_light_normal.xml
+sm       265 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable/launcher_foreground.xml
+sm      1354 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable/logo_play_prism_24dp.xml
+sm       751 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable/notification_bg.xml
+sm       753 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable/notification_bg_low.xml
+sm       314 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable/notification_icon_background.xml
+sm       319 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable/notification_tile_bg.xml
+sm       270 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable/offline_dialog_background.xml
+sm      1390 Thu Jan 01 01:01:02 GMT 1981 base/res/drawable/offline_dialog_default_icon_42dp.xml
+sm      2216 Thu Jan 01 01:01:02 GMT 1981 base/res/layout-v21/notification_action.xml
+sm      2677 Thu Jan 01 01:01:02 GMT 1981 base/res/layout-v21/notification_action_tombstone.xml
+sm      6318 Thu Jan 01 01:01:02 GMT 1981 base/res/layout-v21/notification_template_custom_big.xml
+sm      2432 Thu Jan 01 01:01:02 GMT 1981 base/res/layout-v21/notification_template_icon_group.xml
+sm       546 Thu Jan 01 01:01:02 GMT 1981 base/res/layout/admob_empty_layout.xml
+sm      3165 Thu Jan 01 01:01:02 GMT 1981 base/res/layout/browser_actions_context_menu_page.xml
+sm      2211 Thu Jan 01 01:01:02 GMT 1981 base/res/layout/browser_actions_context_menu_row.xml
+sm      2128 Thu Jan 01 01:01:02 GMT 1981 base/res/layout/hsdp_service_prism_with_loading_indicator.xml
+sm       374 Thu Jan 01 01:01:02 GMT 1981 base/res/layout/hsdp_shim_activity.xml
+sm       643 Thu Jan 01 01:01:02 GMT 1981 base/res/layout/notification_template_part_chronometer.xml
+sm       630 Thu Jan 01 01:01:02 GMT 1981 base/res/layout/notification_template_part_time.xml
+sm      3442 Thu Jan 01 01:01:02 GMT 1981 base/res/layout/offline_ads_dialog.xml
+sm      2010 Thu Jan 01 01:01:02 GMT 1981 base/res/layout/sdk_loading_panel.xml
+sm       407 Thu Jan 01 01:01:02 GMT 1981 base/res/mipmap-anydpi-v26/ic_launcher.xml
+sm       407 Thu Jan 01 01:01:02 GMT 1981 base/res/mipmap-anydpi-v26/ic_launcher_round.xml
+sm       638 Thu Jan 01 01:01:02 GMT 1981 base/res/xml/data_extraction_rules.xml
+sm        93 Thu Jan 01 01:01:02 GMT 1981 base/res/xml/image_share_filepaths.xml
+sm       168 Thu Jan 01 01:01:02 GMT 1981 base/res/xml/network_security_config.xml
+sm    321515 Thu Jan 01 01:01:02 GMT 1981 base/resources.pb
+sm      1738 Thu Jan 01 01:01:02 GMT 1981 base/root/DebugProbesKt.bin
+sm         6 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.activity_activity.version
+sm         6 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.annotation_annotation-experimental.version
+sm         6 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.appcompat_appcompat-resources.version
+sm         6 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.arch.core_core-runtime.version
+sm         6 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.browser_browser.version
+sm         7 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.core_core-ktx.version
+sm         7 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.core_core.version
+sm         6 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.customview_customview.version
+sm         6 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.datastore_datastore.version
+sm         6 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.fragment_fragment.version
+sm         6 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.interpolator_interpolator.version
+sm         6 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.lifecycle_lifecycle-livedata-core.version
+sm         6 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.lifecycle_lifecycle-livedata.version
+sm         6 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.lifecycle_lifecycle-runtime.version
+sm         6 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.lifecycle_lifecycle-service.version
+sm         6 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.lifecycle_lifecycle-viewmodel.version
+sm         6 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.loader_loader.version
+sm        13 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.privacysandbox.ads_ads-adservices-java.version
+sm        13 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.privacysandbox.ads_ads-adservices.version
+sm         6 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.room_room-runtime.version
+sm         6 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.savedstate_savedstate.version
+sm         6 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.sqlite_sqlite-framework.version
+sm         6 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.sqlite_sqlite.version
+sm         6 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.startup_startup-runtime.version
+sm         6 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.tracing_tracing.version
+sm         6 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.vectordrawable_vectordrawable-animated.version
+sm         6 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.vectordrawable_vectordrawable.version
+sm         6 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.versionedparcelable_versionedparcelable.version
+sm         6 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.viewpager_viewpager.version
+sm         7 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.webkit_webkit.version
+sm         6 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/androidx.work_work-runtime.version
+sm        57 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/com/android/build/gradle/app-metadata.properties
+sm         5 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/kotlinx_coroutines_android.version
+sm         5 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/kotlinx_coroutines_core.version
+sm         5 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/services/r3.a
+sm         5 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/services/r3.b
+sm        46 Thu Jan 01 01:01:02 GMT 1981 base/root/META-INF/version-control-info.textproto
+sm        58 Thu Jan 01 01:01:02 GMT 1981 base/root/core-common.properties
+sm        44 Thu Jan 01 01:01:02 GMT 1981 base/root/hsdp.properties
+sm        54 Thu Jan 01 01:01:02 GMT 1981 base/root/integrity.properties
+sm       865 Thu Jan 01 01:01:02 GMT 1981 base/root/kotlin/annotation/annotation.kotlin_builtins
+sm      3635 Thu Jan 01 01:01:02 GMT 1981 base/root/kotlin/collections/collections.kotlin_builtins
+sm       137 Thu Jan 01 01:01:02 GMT 1981 base/root/kotlin/coroutines/coroutines.kotlin_builtins
+sm       583 Thu Jan 01 01:01:02 GMT 1981 base/root/kotlin/internal/internal.kotlin_builtins
+sm     18653 Thu Jan 01 01:01:02 GMT 1981 base/root/kotlin/kotlin.kotlin_builtins
+sm      3349 Thu Jan 01 01:01:02 GMT 1981 base/root/kotlin/ranges/ranges.kotlin_builtins
+sm      2370 Thu Jan 01 01:01:02 GMT 1981 base/root/kotlin/reflect/reflect.kotlin_builtins
+sm        80 Thu Jan 01 01:01:02 GMT 1981 base/root/play-services-ads-api.properties
+sm        94 Thu Jan 01 01:01:02 GMT 1981 base/root/play-services-ads-identifier.properties
+sm        72 Thu Jan 01 01:01:02 GMT 1981 base/root/play-services-ads.properties
+sm        78 Thu Jan 01 01:01:02 GMT 1981 base/root/play-services-appset.properties
+sm        74 Thu Jan 01 01:01:02 GMT 1981 base/root/play-services-base.properties
+sm        82 Thu Jan 01 01:01:02 GMT 1981 base/root/play-services-basement.properties
+sm        98 Thu Jan 01 01:01:02 GMT 1981 base/root/play-services-measurement-base.properties
+sm       104 Thu Jan 01 01:01:02 GMT 1981 base/root/play-services-measurement-sdk-api.properties
+sm        76 Thu Jan 01 01:01:02 GMT 1981 base/root/play-services-tasks.properties
+sm        82 Thu Jan 01 01:01:02 GMT 1981 base/root/user-messaging-platform.properties
+       21795 Thu Jan 01 01:01:02 GMT 1981 META-INF/BILGIARE.SF
+        1685 Thu Jan 01 01:01:02 GMT 1981 META-INF/BILGIARE.RSA
+s      21746 Thu Jan 01 01:01:02 GMT 1981 META-INF/MANIFEST.MF
+
+  s = signature was verified 
+  m = entry is listed in manifest
+  k = at least one certificate was found in keystore
+
+- Signed by "CN=BilgiArena Upload, OU=Android, O=Salih Tekin, C=TR"
+    Digest algorithm: SHA-256
+    Signature algorithm: SHA256withRSA, 3072-bit key
+
+jar verified.
+
+Warning: 
+This jar contains entries whose certificate chain is invalid. Reason: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+This jar contains entries whose signer certificate is self-signed.
+This jar contains signatures that do not include a timestamp. Without a timestamp, users may not be able to validate this jar after any of the signer certificates expire (as early as 2054-03-07).
+POSIX file permission and/or symlink attributes detected. These attributes are ignored when signing and are not protected by the signature.
+
+This JAR file contains internal inconsistencies that may result in different contents when reading via JarFile and JarInputStream:
+- Manifest is missing when reading via JarInputStream
+- Entry BUNDLE-METADATA/com.android.tools.build.gradle/app-metadata.properties is signed in JarFile but is not signed in JarInputStream
+- Entry BUNDLE-METADATA/com.android.tools.build.libraries/dependencies.pb is signed in JarFile but is not signed in JarInputStream
+- Entry BUNDLE-METADATA/com.android.tools.build.obfuscation/proguard.map is signed in JarFile but is not signed in JarInputStream
+- Entry BUNDLE-METADATA/com.android.tools/r8.json is signed in JarFile but is not signed in JarInputStream
+- Entry BundleConfig.pb is signed in JarFile but is not signed in JarInputStream
+- Entry base/assets.pb is signed in JarFile but is not signed in JarInputStream
+- Entry base/assets/art/anagram.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/assets/art/avatar.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/assets/art/colors.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/assets/art/math.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/assets/art/memory.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/assets/art/prize.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/assets/art/reverse.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/assets/art/trivia.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/assets/fonts/OFL-DelaGothicOne.txt is signed in JarFile but is not signed in JarInputStream
+- Entry base/assets/fonts/OFL-Rubik.txt is signed in JarFile but is not signed in JarInputStream
+- Entry base/assets/fonts/dela.ttf is signed in JarFile but is not signed in JarInputStream
+- Entry base/assets/fonts/rubik-400.ttf is signed in JarFile but is not signed in JarInputStream
+- Entry base/assets/fonts/rubik-500.ttf is signed in JarFile but is not signed in JarInputStream
+- Entry base/assets/fonts/rubik-700.ttf is signed in JarFile but is not signed in JarInputStream
+- Entry base/assets/legal.json is signed in JarFile but is not signed in JarInputStream
+- Entry base/dex/classes.dex is signed in JarFile but is not signed in JarInputStream
+- Entry base/dex/classes2.dex is signed in JarFile but is not signed in JarInputStream
+- Entry base/manifest/AndroidManifest.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/color/common_google_signin_btn_text_dark.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/color/common_google_signin_btn_text_light.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/color/common_google_signin_btn_tint.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-hdpi-v4/common_full_open_on_phone.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-hdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-hdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-hdpi-v4/common_google_signin_btn_text_light_normal_background.9.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-hdpi-v4/googleg_disabled_color_18.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-hdpi-v4/googleg_standard_color_18.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-hdpi-v4/notification_bg_low_normal.9.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-hdpi-v4/notification_bg_low_pressed.9.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-hdpi-v4/notification_bg_normal.9.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-mdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-mdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-mdpi-v4/common_google_signin_btn_text_light_normal_background.9.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-mdpi-v4/googleg_disabled_color_18.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-mdpi-v4/googleg_standard_color_18.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-mdpi-v4/notification_bg_low_normal.9.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-mdpi-v4/notification_bg_low_pressed.9.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-mdpi-v4/notification_bg_normal.9.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-v21/notification_action_background.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-xhdpi-v4/common_full_open_on_phone.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-xhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-xhdpi-v4/googleg_disabled_color_18.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-xhdpi-v4/googleg_standard_color_18.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-xhdpi-v4/notification_bg_normal.9.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-xxhdpi-v4/googleg_disabled_color_18.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable-xxhdpi-v4/googleg_standard_color_18.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable/abc_vector_test.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable/admob_close_button_black_circle_white_cross.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable/admob_close_button_white_circle_black_cross.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable/admob_close_button_white_cross.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable/app_mark.png is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable/common_google_signin_btn_icon_dark.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable/common_google_signin_btn_icon_dark_focused.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable/common_google_signin_btn_icon_dark_normal.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable/common_google_signin_btn_icon_disabled.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable/common_google_signin_btn_icon_light.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable/common_google_signin_btn_icon_light_focused.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable/common_google_signin_btn_icon_light_normal.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable/common_google_signin_btn_text_dark.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable/common_google_signin_btn_text_dark_focused.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable/common_google_signin_btn_text_dark_normal.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable/common_google_signin_btn_text_disabled.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable/common_google_signin_btn_text_light.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable/common_google_signin_btn_text_light_focused.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable/common_google_signin_btn_text_light_normal.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable/launcher_foreground.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable/logo_play_prism_24dp.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable/notification_bg.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable/notification_bg_low.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable/notification_icon_background.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable/notification_tile_bg.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable/offline_dialog_background.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/drawable/offline_dialog_default_icon_42dp.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/layout-v21/notification_action.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/layout-v21/notification_action_tombstone.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/layout-v21/notification_template_custom_big.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/layout-v21/notification_template_icon_group.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/layout/admob_empty_layout.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/layout/browser_actions_context_menu_page.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/layout/browser_actions_context_menu_row.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/layout/hsdp_service_prism_with_loading_indicator.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/layout/hsdp_shim_activity.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/layout/notification_template_part_chronometer.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/layout/notification_template_part_time.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/layout/offline_ads_dialog.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/layout/sdk_loading_panel.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/mipmap-anydpi-v26/ic_launcher.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/mipmap-anydpi-v26/ic_launcher_round.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/xml/data_extraction_rules.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/xml/image_share_filepaths.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/res/xml/network_security_config.xml is signed in JarFile but is not signed in JarInputStream
+- Entry base/resources.pb is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/DebugProbesKt.bin is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.activity_activity.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.annotation_annotation-experimental.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.appcompat_appcompat-resources.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.arch.core_core-runtime.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.browser_browser.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.core_core-ktx.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.core_core.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.customview_customview.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.datastore_datastore.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.fragment_fragment.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.interpolator_interpolator.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.lifecycle_lifecycle-livedata-core.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.lifecycle_lifecycle-livedata.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.lifecycle_lifecycle-runtime.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.lifecycle_lifecycle-service.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.lifecycle_lifecycle-viewmodel.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.loader_loader.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.privacysandbox.ads_ads-adservices-java.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.privacysandbox.ads_ads-adservices.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.room_room-runtime.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.savedstate_savedstate.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.sqlite_sqlite-framework.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.sqlite_sqlite.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.startup_startup-runtime.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.tracing_tracing.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.vectordrawable_vectordrawable-animated.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.vectordrawable_vectordrawable.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.versionedparcelable_versionedparcelable.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.viewpager_viewpager.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.webkit_webkit.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/androidx.work_work-runtime.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/com/android/build/gradle/app-metadata.properties is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/kotlinx_coroutines_android.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/kotlinx_coroutines_core.version is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/services/r3.a is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/services/r3.b is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/META-INF/version-control-info.textproto is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/core-common.properties is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/hsdp.properties is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/integrity.properties is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/kotlin/annotation/annotation.kotlin_builtins is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/kotlin/collections/collections.kotlin_builtins is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/kotlin/coroutines/coroutines.kotlin_builtins is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/kotlin/internal/internal.kotlin_builtins is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/kotlin/kotlin.kotlin_builtins is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/kotlin/ranges/ranges.kotlin_builtins is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/kotlin/reflect/reflect.kotlin_builtins is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/play-services-ads-api.properties is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/play-services-ads-identifier.properties is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/play-services-ads.properties is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/play-services-appset.properties is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/play-services-base.properties is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/play-services-basement.properties is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/play-services-measurement-base.properties is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/play-services-measurement-sdk-api.properties is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/play-services-tasks.properties is signed in JarFile but is not signed in JarInputStream
+- Entry base/root/user-messaging-platform.properties is signed in JarFile but is not signed in JarInputStream
+- Entry META-INF/MANIFEST.MF is signed in JarFile but is not signed in JarInputStream
+
+Re-run with the -verbose and -certs options for more details.
+
+The signer certificate will expire on 2054-03-07.

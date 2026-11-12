@@ -1,0 +1,39 @@
+✔ unauthenticated spoofed identity headers do not grant API or admin access (35.379596ms)
+✔ all admin sections reject an ordinary signed-in player (9.086853ms)
+✔ the owner can open each admin section without leaking answer storage (25.989317ms)
+✔ forged score and role fields are rejected by the actual gameplay route (12.27881ms)
+✔ actual routes forbid cross-site JSON and fake JSON content types (6.569245ms)
+✔ read, resume, answer, interrupt and abandon cannot target another player's round (13.455437ms)
+✔ the actual start endpoint enforces the extra start rate limit (12.82635ms)
+✔ owner suspension immediately blocks a previously authenticated player's API session (10.861303ms)
+✔ interrupt cannot bypass required Play Integrity when a ranked question is active (12.451896ms)
+✔ oversized declared bodies and malformed requests fail before creating a round (5.794899ms)
+✔ the security report download also enforces owner authorization (6.172809ms)
+✔ account endpoint trusts provider identity and rejects spoofed account ownership (9.971014ms)
+✔ first account visit creates no player until the registration endpoint receives explicit consent (9.364581ms)
+✔ actual deletion API removes only the session owner and subsequent game access does not recreate it (7.262618ms)
+✔ account writes reject cross-site and non-JSON deletion attempts (5.043819ms)
+✔ commerce routes require trusted authentication and never accept forged owner or cash flags (12.307829ms)
+✔ commerce routes enforce CSRF, bounded payloads and strict queries (8.181921ms)
+✔ live join, answer and interruption cannot bypass required Play Integrity (6.59968ms)
+✔ wallet read limits and financial account consent are enforced by actual routes (59.007779ms)
+✔ new player services reject cross-origin writes, unknown fields and unauthenticated reads (10.874854ms)
+✔ round access capability reaches the real route but never bypasses answer attestation (12.117919ms)
+✔ content and service administration stay behind the owner allowlist (5.480827ms)
+✔ health checks new schema without exposing player data and fails closed on missing tables (6.608453ms)
+✔ MCP requires trusted admin identity even when the caller forges owner headers (9.376869ms)
+✔ MCP exposes static tools, rejects foreign origins and unsupported arguments (4.776186ms)
+✔ authenticated MCP maintenance persists and reads back its run without private player rows (7.254596ms)
+✔ MCP accepts protocol metadata and omitted empty arguments on the actual route (5.754178ms)
+✔ MCP metadata never grants an ordinary user administrative privileges (5.67883ms)
+✔ MCP rejects malformed metadata and still rejects undeclared tool arguments (6.478659ms)
+✔ health fails closed when the maintenance migration is unavailable (4.510317ms)
+✔ crash count telemetry remains opt-in, bounded and cleared on consent withdrawal (7.203258ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 536.290304

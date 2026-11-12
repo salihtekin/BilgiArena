@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.BilgiArena" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#25282E</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">#A0D3D7</item>
+        <item name="android:navigationBarColor">#25282E</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowBackground">#A0D3D7</item>
+
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+    <style name="Theme.BilgiArena" parent="Base.Theme.BilgiArena"/>
+    <color name="launcher_background">#A0D3D7</color>
+</resources>

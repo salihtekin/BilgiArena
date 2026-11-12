@@ -1,0 +1,97 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1792293387187,
+      "tag": "0000_mixed_big_bertha",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1792294337591,
+      "tag": "0001_special_bastion",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1792294871840,
+      "tag": "0002_cynical_natasha_romanoff",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1792486106490,
+      "tag": "0003_naive_ben_grimm",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1792500081498,
+      "tag": "0004_whole_proteus",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1792588380106,
+      "tag": "0005_competition_wallet",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1792588424272,
+      "tag": "0006_clumsy_kylun",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "6",
+      "when": 1792588572927,
+      "tag": "0007_ledger_guards",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "6",
+      "when": 1793467570568,
+      "tag": "0008_naive_betty_ross",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "6",
+      "when": 1793467796864,
+      "tag": "0009_brainy_wendell_vaughn",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "6",
+      "when": 1793468506056,
+      "tag": "0010_smooth_ego",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "6",
+      "when": 1793469270577,
+      "tag": "0011_curvy_darkstar",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "6",
+      "when": 1793490961044,
+      "tag": "0012_clever_sunspot",
+      "breakpoints": true
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+import type {LegalDocument} from "../lib/legal-content";
+export default function LegalDocumentPage({document}:{document:LegalDocument}){return <main className="legal-page"><div className="legal-shell"><a href="/">bilgiarena</a><h1>{document.title}</h1><p>Son güncelleme: {document.version}</p><nav><a href="/privacy">Gizlilik</a><a href="/terms">Koşullar</a><a href="/account/delete">Hesap silme</a><a href="/support">Destek</a></nav>{document.sections.map(s=><section key={s.title}><h2>{s.title}</h2><p>{s.text}</p></section>)}</div></main>;}

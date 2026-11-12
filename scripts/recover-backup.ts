@@ -1,0 +1,14 @@
+/** Offline rehearsal only. Deliberately has no live database or restore API. */
+import {DatabaseSync} from 'node:sqlite';
+import {readFileSync,readdirSync,existsSync,chmodSync,unlinkSync} from 'node:fs';
+import {resolve} from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {validateSnapshot,openSnapshot,MAX_ENVELOPE_BYTES,SNAPSHOT_TABLES,type RecoverySnapshot} from '../lib/recovery-snapshot.ts';
+export function restoreRehearsal(db:DatabaseSync,snapshot:RecoverySnapshot){
+ validateSnapshot(snapshot);db.exec('PRAGMA foreign_keys=ON');for(const file of readdirSync(new URL('../drizzle/',import.meta.url)).filter(f=>f.endsWith('.sql')).sort())db.exec(readFileSync(new URL('../drizzle/'+file,import.meta.url),'utf8'));
+ for(const table of SNAPSHOT_TABLES){const actual=db.prepare('PRAGMA table_info("'+table+'")').all();if(JSON.stringify(actual)!==JSON.stringify(snapshot.schema[table]))throw new Error('Snapshot schema does not match these migrations.');}
+ db.exec('BEGIN; PRAGMA defer_foreign_keys=ON');try{for(const table of SNAPSHOT_TABLES){const columns=snapshot.schema[table].map(c=>c.name),insert=db.prepare('INSERT INTO "'+table+'"('+columns.map(c=>'"'+c+'"').join(',')+') VALUES('+columns.map(()=>'?').join(',')+')');for(const row of snapshot.tables[table])insert.run(...columns.map(c=>row[c]));}if(db.prepare('PRAGMA foreign_key_check').all().length)throw new Error('Foreign key verification failed.');db.exec('COMMIT');}catch(e){db.exec('ROLLBACK');throw e;}
+ if(db.prepare('PRAGMA integrity_check').get()?.integrity_check!=='ok')throw new Error('SQLite integrity check failed.');return{tables:SNAPSHOT_TABLES.length,rows:Object.values(snapshot.tables).reduce((n,rows)=>n+rows.length,0),rehearsalOnly:true};
+}
+async function main(){const args=process.argv.slice(2);if(args.length!==5||args[0]!=='--rehearsal-only'||args[1]!=='--input'||args[3]!=='--output')throw new Error('Use --rehearsal-only --input backup.json.enc --output new.rehearsal.sqlite');const input=resolve(args[2]),output=resolve(args[4]);if(!output.endsWith('.rehearsal.sqlite')||existsSync(output))throw new Error('Output must be a new .rehearsal.sqlite file.');const bytes=readFileSync(input);if(bytes.length>MAX_ENVELOPE_BYTES)throw new Error('Backup exceeds size limit.');const result=await openSnapshot({ARENA_PAYOUT_KEYRING:process.env.ARENA_PAYOUT_KEYRING},bytes.toString('utf8'));let db:DatabaseSync|undefined;try{db=new DatabaseSync(output);chmodSync(output,0o600);const summary=restoreRehearsal(db,result.snapshot);console.log(JSON.stringify(summary));}catch(e){db?.close();db=undefined;if(existsSync(output))unlinkSync(output);throw e;}finally{db?.close();}}
+if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url))main().catch(()=>{console.error('Recovery rehearsal failed. No live database was changed.');process.exitCode=1;});

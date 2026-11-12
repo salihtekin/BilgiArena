@@ -1,0 +1,6 @@
+1.2.1
+- Yakın zamanda çıkan çevrimdışı bilgi ve kelime sorularının tekrarını azaltma.
+- İsteğe bağlı, kişisel ayrıntı içermeyen çökme sayacı ve izin geri alma temizliği.
+- Yönetici bakım geçmişi, çakışma koruması ve şifreli yedek oluşturma/doğrulama/indirme.
+- Ayrı veritabanına güvenli kurtarma provası; boyut aşımında eksik yedeği reddetme.
+Nakit yarışma, gerçek reklam ve Google Play bağlantısı bu pakette açılmamıştır.

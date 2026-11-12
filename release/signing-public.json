@@ -1,0 +1,6 @@
+{
+  "alias": "bilgiarena-upload",
+  "keyStoreType": "PKCS12",
+  "certificateSha256": "fc2ba776d27fee9990692402865c64e467c3a1fce19eed3d593777e6ebdb4283",
+  "privateKeyIncluded": false
+}

@@ -1,0 +1,8 @@
+01-home.png: BilgiArena ana sayfası, haftalık sıra ve Ters Köşe oyunu.
+02-games.png: Altı oyunun bulunduğu BilgiArena oyun salonu.
+03-reverse.png: Tersten yazılmış kelimeyi tahmin etme aşaması ve geri sayım.
+04-anagram.png: Karışık harflerden kelime oluşturma oyunu.
+05-memory.png: Hafıza İzi ışık dizisi aşaması.
+06-trivia.png: Bilgi Arenası sorusu, gizli seçim platformları ve süre göstergesi.
+
+07-math.png: Eksik Sayı oyununun süre çubuğu, sayısal tuş takımı ve yanıt düğmesi.

@@ -1,0 +1,1 @@
+CREATE INDEX `integrity_expiry_idx` ON `integrity_challenges` (`expires_at`);

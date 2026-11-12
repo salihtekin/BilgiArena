@@ -1,0 +1,508 @@
+TAP version 13
+# Subtest: reading account state never implicitly creates a player
+ok 1 - reading account state never implicitly creates a player
+  ---
+  duration_ms: 19.041095
+  type: 'test'
+  ...
+# Subtest: registration requires separate explicit current acknowledgements and strict fields
+ok 2 - registration requires separate explicit current acknowledgements and strict fields
+  ---
+  duration_ms: 19.573073
+  type: 'test'
+  ...
+# Subtest: deletion removes gameplay records, redacts audit identity and preserves another player
+ok 3 - deletion removes gameplay records, redacts audit identity and preserves another player
+  ---
+  duration_ms: 32.998696
+  type: 'test'
+  ...
+# Subtest: unconfirmed deletion is rejected without deleting data
+ok 4 - unconfirmed deletion is rejected without deleting data
+  ---
+  duration_ms: 11.183275
+  type: 'test'
+  ...
+# Subtest: deleted account is not resurrected by status or gameplay requests
+ok 5 - deleted account is not resurrected by status or gameplay requests
+  ---
+  duration_ms: 8.488701
+  type: 'test'
+  ...
+# Subtest: deleting and recreating a card cannot reset today's ranked quota
+ok 6 - deleting and recreating a card cannot reset today's ranked quota
+  ---
+  duration_ms: 20.499742
+  type: 'test'
+  ...
+# Subtest: repeated deletion does not extend guardrail retention
+ok 7 - repeated deletion does not extend guardrail retention
+  ---
+  duration_ms: 6.540915
+  type: 'test'
+  ...
+# Subtest: suspended players can delete data but cannot evade suspension by recreating
+ok 8 - suspended players can delete data but cannot evade suspension by recreating
+  ---
+  duration_ms: 8.288495
+  type: 'test'
+  ...
+# Subtest: deletion is atomic when a database operation fails
+ok 9 - deletion is atomic when a database operation fails
+  ---
+  duration_ms: 9.415541
+  type: 'test'
+  ...
+# Subtest: new policy acknowledgement preserves existing gameplay
+ok 10 - new policy acknowledgement preserves existing gameplay
+  ---
+  duration_ms: 14.496812
+  type: 'test'
+  ...
+# Subtest: admin permission is fail-closed and requires BOTH trusted identity fields
+ok 11 - admin permission is fail-closed and requires BOTH trusted identity fields
+  ---
+  duration_ms: 6.018694
+  type: 'test'
+  ...
+# Subtest: every admin data operation and mutation rejects a normal user before revealing data
+ok 12 - every admin data operation and mutation rejects a normal user before revealing data
+  ---
+  duration_ms: 9.670319
+  type: 'test'
+  ...
+# Subtest: owner overview uses real counts, excludes answers and does not invent money
+ok 13 - owner overview uses real counts, excludes answers and does not invent money
+  ---
+  duration_ms: 40.377992
+  type: 'test'
+  ...
+# Subtest: suspension closes active rounds, removes league access, rejects an existing session and is audited
+ok 14 - suspension closes active rounds, removes league access, rejects an existing session and is audited
+  ---
+  duration_ms: 46.483913
+  type: 'test'
+  ...
+# Subtest: voiding a ranked round subtracts its points, retains evidence and cannot be replayed
+ok 15 - voiding a ranked round subtracts its points, retains evidence and cannot be replayed
+  ---
+  duration_ms: 33.958289
+  type: 'test'
+  ...
+# Subtest: an audit write failure rolls back the management change
+ok 16 - an audit write failure rolls back the management change
+  ---
+  duration_ms: 5.319433
+  type: 'test'
+  ...
+# Subtest: a business change failure also rolls back the previously inserted audit row
+ok 17 - a business change failure also rolls back the previously inserted audit row
+  ---
+  duration_ms: 8.572882
+  type: 'test'
+  ...
+# Subtest: maintenance and individual game controls are server-enforced and stale edits lose safely
+ok 18 - maintenance and individual game controls are server-enforced and stale edits lose safely
+  ---
+  duration_ms: 14.811006
+  type: 'test'
+  ...
+# Subtest: admin mutations reject arbitrary fields, invalid games and short reasons without writes
+ok 19 - admin mutations reject arbitrary fields, invalid games and short reasons without writes
+  ---
+  duration_ms: 4.296683
+  type: 'test'
+  ...
+# Subtest: parameterized literal search and bounded paging resist SQL injection and wildcard scans
+ok 20 - parameterized literal search and bounded paging resist SQL injection and wildcard scans
+  ---
+  duration_ms: 7.448508
+  type: 'test'
+  ...
+# Subtest: rate limits are atomic, separate accounts and buckets, and recover in a new window
+ok 21 - rate limits are atomic, separate accounts and buckets, and recover in a new window
+  ---
+  duration_ms: 6.408096
+  type: 'test'
+  ...
+# Subtest: JSON parsing rejects over-limit streams before buffering them in full
+ok 22 - JSON parsing rejects over-limit streams before buffering them in full
+  ---
+  duration_ms: 14.963688
+  type: 'test'
+  ...
+# Subtest: CSRF rejects foreign origins, missing-origin cross-site requests and unmarked admin writes
+ok 23 - CSRF rejects foreign origins, missing-origin cross-site requests and unmarked admin writes
+  ---
+  duration_ms: 2.124287
+  type: 'test'
+  ...
+# Subtest: strict action validation blocks forged identity, score, admin role and oversized answers
+ok 24 - strict action validation blocks forged identity, score, admin role and oversized answers
+  ---
+  duration_ms: 0.633358
+  type: 'test'
+  ...
+# Subtest: public leaderboard never exposes authentication IDs, including the viewer's
+ok 25 - public leaderboard never exposes authentication IDs, including the viewer's
+  ---
+  duration_ms: 33.392918
+  type: 'test'
+  ...
+# Subtest: management responses prohibit caching and third-party framing; errors hide internals
+ok 26 - management responses prohibit caching and third-party framing; errors hide internals
+  ---
+  duration_ms: 2.389825
+  type: 'test'
+  ...
+# Subtest: unauthenticated spoofed identity headers do not grant API or admin access
+ok 27 - unauthenticated spoofed identity headers do not grant API or admin access
+  ---
+  duration_ms: 35.651833
+  type: 'test'
+  ...
+# Subtest: all admin sections reject an ordinary signed-in player
+ok 28 - all admin sections reject an ordinary signed-in player
+  ---
+  duration_ms: 15.321409
+  type: 'test'
+  ...
+# Subtest: the owner can open each admin section without leaking answer storage
+ok 29 - the owner can open each admin section without leaking answer storage
+  ---
+  duration_ms: 44.17151
+  type: 'test'
+  ...
+# Subtest: forged score and role fields are rejected by the actual gameplay route
+ok 30 - forged score and role fields are rejected by the actual gameplay route
+  ---
+  duration_ms: 19.596277
+  type: 'test'
+  ...
+# Subtest: actual routes forbid cross-site JSON and fake JSON content types
+ok 31 - actual routes forbid cross-site JSON and fake JSON content types
+  ---
+  duration_ms: 12.330701
+  type: 'test'
+  ...
+# Subtest: read, resume, answer, interrupt and abandon cannot target another player's round
+ok 32 - read, resume, answer, interrupt and abandon cannot target another player's round
+  ---
+  duration_ms: 22.620334
+  type: 'test'
+  ...
+# Subtest: the actual start endpoint enforces the extra start rate limit
+ok 33 - the actual start endpoint enforces the extra start rate limit
+  ---
+  duration_ms: 20.446169
+  type: 'test'
+  ...
+# Subtest: owner suspension immediately blocks a previously authenticated player's API session
+ok 34 - owner suspension immediately blocks a previously authenticated player's API session
+  ---
+  duration_ms: 8.09936
+  type: 'test'
+  ...
+# Subtest: interrupt cannot bypass required Play Integrity when a ranked question is active
+ok 35 - interrupt cannot bypass required Play Integrity when a ranked question is active
+  ---
+  duration_ms: 9.008226
+  type: 'test'
+  ...
+# Subtest: oversized declared bodies and malformed requests fail before creating a round
+ok 36 - oversized declared bodies and malformed requests fail before creating a round
+  ---
+  duration_ms: 7.160699
+  type: 'test'
+  ...
+# Subtest: the security report download also enforces owner authorization
+ok 37 - the security report download also enforces owner authorization
+  ---
+  duration_ms: 7.266066
+  type: 'test'
+  ...
+# Subtest: account endpoint trusts provider identity and rejects spoofed account ownership
+ok 38 - account endpoint trusts provider identity and rejects spoofed account ownership
+  ---
+  duration_ms: 19.755976
+  type: 'test'
+  ...
+# Subtest: first account visit creates no player until the registration endpoint receives explicit consent
+ok 39 - first account visit creates no player until the registration endpoint receives explicit consent
+  ---
+  duration_ms: 17.651467
+  type: 'test'
+  ...
+# Subtest: actual deletion API removes only the session owner and subsequent game access does not recreate it
+ok 40 - actual deletion API removes only the session owner and subsequent game access does not recreate it
+  ---
+  duration_ms: 10.003064
+  type: 'test'
+  ...
+# Subtest: account writes reject cross-site and non-JSON deletion attempts
+ok 41 - account writes reject cross-site and non-JSON deletion attempts
+  ---
+  duration_ms: 6.062347
+  type: 'test'
+  ...
+# Subtest: commerce routes require trusted authentication and never accept forged owner or cash flags
+ok 42 - commerce routes require trusted authentication and never accept forged owner or cash flags
+  ---
+  duration_ms: 14.281495
+  type: 'test'
+  ...
+# Subtest: commerce routes enforce CSRF, bounded payloads and strict queries
+ok 43 - commerce routes enforce CSRF, bounded payloads and strict queries
+  ---
+  duration_ms: 8.614658
+  type: 'test'
+  ...
+# Subtest: live join, answer and interruption cannot bypass required Play Integrity
+ok 44 - live join, answer and interruption cannot bypass required Play Integrity
+  ---
+  duration_ms: 8.305788
+  type: 'test'
+  ...
+# Subtest: wallet read limits and financial account consent are enforced by actual routes
+ok 45 - wallet read limits and financial account consent are enforced by actual routes
+  ---
+  duration_ms: 134.696305
+  type: 'test'
+  ...
+# Subtest: six games produce valid deterministic ten-stage rounds with 10/15-second limits
+ok 46 - six games produce valid deterministic ten-stage rounds with 10/15-second limits
+  ---
+  duration_ms: 11.127104
+  type: 'test'
+  ...
+# Subtest: Istanbul calendar switches day and week at local midnight
+ok 47 - Istanbul calendar switches day and week at local midnight
+  ---
+  duration_ms: 22.878025
+  type: 'test'
+  ...
+# Subtest: public round state never contains answer keys, explanations or future questions
+ok 48 - public round state never contains answer keys, explanations or future questions
+  ---
+  duration_ms: 24.078766
+  type: 'test'
+  ...
+# Subtest: completed ranked round persists 100 points and records two demo opportunities, zero revenue
+ok 49 - completed ranked round persists 100 points and records two demo opportunities, zero revenue
+  ---
+  duration_ms: 39.401474
+  type: 'test'
+  ...
+# Subtest: answer retries and concurrent duplicate submissions do not double award points
+ok 50 - answer retries and concurrent duplicate submissions do not double award points
+  ---
+  duration_ms: 10.693969
+  type: 'test'
+  ...
+# Subtest: server deadline rejects a correct answer sent late
+ok 51 - server deadline rejects a correct answer sent late
+  ---
+  duration_ms: 9.246002
+  type: 'test'
+  ...
+# Subtest: a user cannot read, answer or abandon another user's round
+ok 52 - a user cannot read, answer or abandon another user's round
+  ---
+  duration_ms: 7.090811
+  type: 'test'
+  ...
+# Subtest: three daily ranked starts are enforced while practice remains available
+ok 53 - three daily ranked starts are enforced while practice remains available
+  ---
+  duration_ms: 18.125353
+  type: 'test'
+  ...
+# Subtest: simultaneous start retries resume one round instead of consuming multiple attempts
+ok 54 - simultaneous start retries resume one round instead of consuming multiple attempts
+  ---
+  duration_ms: 13.14044
+  type: 'test'
+  ...
+# Subtest: practice points and final simulations never enter the weekly cash qualification board
+ok 55 - practice points and final simulations never enter the weekly cash qualification board
+  ---
+  duration_ms: 44.193034
+  type: 'test'
+  ...
+# Subtest: one wrong final answer eliminates the player and issues no monetary reward
+ok 56 - one wrong final answer eliminates the player and issues no monetary reward
+  ---
+  duration_ms: 8.881899
+  type: 'test'
+  ...
+# Subtest: weekly cutoff rejects new ranked rounds and stops an unfinished ranked round
+ok 57 - weekly cutoff rejects new ranked rounds and stops an unfinished ranked round
+  ---
+  duration_ms: 13.175056
+  type: 'test'
+  ...
+# Subtest: weekly reset clears the displayed score without deleting past rounds
+ok 58 - weekly reset clears the displayed score without deleting past rounds
+  ---
+  duration_ms: 26.601493
+  type: 'test'
+  ...
+# Subtest: profile validation rejects unsafe display names and preserves other players
+ok 59 - profile validation rejects unsafe display names and preserves other players
+  ---
+  duration_ms: 8.035089
+  type: 'test'
+  ...
+# Subtest: a background interruption closes only the owned current question, is idempotent, and survives reload
+ok 60 - a background interruption closes only the owned current question, is idempotent, and survives reload
+  ---
+  duration_ms: 7.655757
+  type: 'test'
+  ...
+# Subtest: the exact deadline is expired and a final interruption eliminates without awarding points
+ok 61 - the exact deadline is expired and a final interruption eliminates without awarding points
+  ---
+  duration_ms: 7.595124
+  type: 'test'
+  ...
+# Subtest: Play validation accepts verified apps, not client claims, and missing configuration stays closed
+ok 62 - Play validation accepts verified apps, not client claims, and missing configuration stays closed
+  ---
+  duration_ms: 6.479149
+  type: 'test'
+  ...
+# Subtest: capture, control and overlay risks are blocked; unavailable risk signals are not treated as safe
+ok 63 - capture, control and overlay risks are blocked; unavailable risk signals are not treated as safe
+  ---
+  duration_ms: 0.449394
+  type: 'test'
+  ...
+# Subtest: challenges bind exact request bytes and the authenticated user, expire, and have a creation rate limit
+ok 64 - challenges bind exact request bytes and the authenticated user, expire, and have a creation rate limit
+  ---
+  duration_ms: 16.607067
+  type: 'test'
+  ...
+# Subtest: server-side Google token exchange is required and a verified challenge is consumed exactly once
+ok 65 - server-side Google token exchange is required and a verified challenge is consumed exactly once
+  ---
+  duration_ms: 117.590237
+  type: 'test'
+  ...
+# Subtest: final answers stay secret through retries, next requests and dashboard reads until the common deadline
+ok 66 - final answers stay secret through retries, next requests and dashboard reads until the common deadline
+  ---
+  duration_ms: 11.936571
+  type: 'test'
+  ...
+# Subtest: memory playback cannot be skipped by directly submitting the visible sequence
+ok 67 - memory playback cannot be skipped by directly submitting the visible sequence
+  ---
+  duration_ms: 7.723445
+  type: 'test'
+  ...
+# Subtest: every game completes a ranked round with server-owned scoring
+ok 68 - every game completes a ranked round with server-owned scoring
+  ---
+  duration_ms: 122.1623
+  type: 'test'
+  ...
+# Subtest: cash cannot be enabled by a flag without encryption and Integrity
+ok 69 - cash cannot be enabled by a flag without encryption and Integrity
+  ---
+  duration_ms: 1.961001
+  type: 'test'
+  ...
+# Subtest: cash requires 200 qualified humans; rehearsal never promises money
+ok 70 - cash requires 200 qualified humans; rehearsal never promises money
+  ---
+  duration_ms: 273.83985
+  type: 'test'
+  ...
+# Subtest: common deadlines hide answers and counts; only a joined finalist sees the current item
+ok 71 - common deadlines hide answers and counts; only a joined finalist sees the current item
+  ---
+  duration_ms: 16.951084
+  type: 'test'
+  ...
+# Subtest: first answer is immutable and reveal happens only at the common deadline
+ok 72 - first answer is immutable and reveal happens only at the common deadline
+  ---
+  duration_ms: 15.201379
+  type: 'test'
+  ...
+# Subtest: all absent cancels without awards; background interruption never wins
+ok 73 - all absent cancels without awards; background interruption never wins
+  ---
+  duration_ms: 12.299921
+  type: 'test'
+  ...
+# Subtest: overlapping stage settlement and prize release credit exactly once
+ok 74 - overlapping stage settlement and prize release credit exactly once
+  ---
+  duration_ms: 222.058884
+  type: 'test'
+  ...
+# Subtest: IBAN checksum, encrypted-at-rest data, owner-bound AAD and key rotation
+ok 75 - IBAN checksum, encrypted-at-rest data, owner-bound AAD and key rotation
+  ---
+  duration_ms: 5.020282
+  type: 'test'
+  ...
+# Subtest: idempotency and concurrent overspending preserve available + held balance
+ok 76 - idempotency and concurrent overspending preserve available + held balance
+  ---
+  duration_ms: 169.754524
+  type: 'test'
+  ...
+# Subtest: manual bank settlement requires operator confirmation, unique reference and owner authority
+ok 77 - manual bank settlement requires operator confirmation, unique reference and owner authority
+  ---
+  duration_ms: 151.092862
+  type: 'test'
+  ...
+# Subtest: audit failure rolls back payment status, balances and ledger
+ok 78 - audit failure rolls back payment status, balances and ledger
+  ---
+  duration_ms: 159.176041
+  type: 'test'
+  ...
+# Subtest: deleting account removes method while preserving unpaid monetary claim and pending payout
+ok 79 - deleting account removes method while preserving unpaid monetary claim and pending payout
+  ---
+  duration_ms: 149.157683
+  type: 'test'
+  ...
+# Subtest: ordinary users cannot create, publish, release or read admin competitions
+ok 80 - ordinary users cannot create, publish, release or read admin competitions
+  ---
+  duration_ms: 8.502817
+  type: 'test'
+  ...
+# Subtest: 200 real entrant rows answer concurrently without exposing choices or duplicating settlement
+ok 81 - 200 real entrant rows answer concurrently without exposing choices or duplicating settlement
+  ---
+  duration_ms: 507.245116
+  type: 'test'
+  ...
+# Subtest: all incorrect responders advance, but nobody can start the next stage before the fixed reveal ends
+ok 82 - all incorrect responders advance, but nobody can start the next stage before the fixed reveal ends
+  ---
+  duration_ms: 14.517335
+  type: 'test'
+  ...
+# Subtest: two winners receive every kuruş exactly once and a shared bank reference cannot settle two payouts
+ok 83 - two winners receive every kuruş exactly once and a shared bank reference cannot settle two payouts
+  ---
+  duration_ms: 187.573777
+  type: 'test'
+  ...
+1..83
+# tests 83
+# suites 0
+# pass 83
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2178.734435

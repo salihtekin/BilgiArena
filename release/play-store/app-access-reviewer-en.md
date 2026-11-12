@@ -1,0 +1,5 @@
+# Reviewer access — 1.2.1 preparation
+The native Android app uses the existing Site/ChatGPT sign-in session. Offline practice works without signing in. Online play requires explicit 18+ terms and privacy acknowledgement. No shared reviewer password is embedded in the app.
+The service is currently owner-private. The publisher must provide supported reviewer access or change the audience before submitting. No reviewer access has been provisioned or tested in this delivery.
+Cash competitions are fail-closed until Play Integrity and runtime cash configuration are connected. This delivered binary has no live AdMob publisher IDs, so it does not request live ads. The cash ledger and manual bank payout workflow are implemented, but no live bank transfer or automated bank API is claimed. Only published competition rules create an award promise; rehearsal rooms do not pay money.
+The publisher must update this access note after configuring the actual release. Do not submit it as proof that reviewer access or financial approvals are complete.

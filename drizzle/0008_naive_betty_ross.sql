@@ -1,0 +1,1 @@
+ALTER TABLE `competitions` ADD `rules_version` text DEFAULT '2026-10-21' NOT NULL;

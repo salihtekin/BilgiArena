@@ -1,0 +1,41 @@
+import assert from "node:assert/strict";
+import {readFileSync,writeFileSync,mkdirSync} from "node:fs";
+import {createRequire} from "node:module";
+import {pathToFileURL} from "node:url";
+import React from "react";
+import {renderToStaticMarkup} from "react-dom/server";
+const require=createRequire(import.meta.url),ts=require("typescript");
+const source=readFileSync(new URL("../app/arena.tsx",import.meta.url),"utf8");
+const output=ts.transpileModule(source.replace('"../lib/local-round"','"../lib/local-round.ts"'),{compilerOptions:{jsx:ts.JsxEmit.ReactJSX,module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022}}).outputText;
+mkdirSync(new URL("../.sites-runtime/",import.meta.url),{recursive:true});
+const file=new URL("../.sites-runtime/arena-smoke.mjs",import.meta.url);writeFileSync(file,output);
+const{default:Arena}=await import(file.href);
+const html=renderToStaticMarkup(React.createElement(Arena,{signedIn:false}));
+for(const text of ["Ters Köşe","Hafıza İzi","Eksik Sayı","Ücretsiz oyun","Hesabını bağla","Ana menü","Geçmiş"])assert.ok(html.includes(text),`Missing UI: ${text}`);
+assert.equal((html.match(/class="ba2-game-tile"/g)||[]).length,2);
+assert.equal(html.includes("Starter Project"),false);
+assert.equal(html.includes("Building your site"),false);
+const postcss=createRequire(require.resolve("@tailwindcss/postcss"))("postcss");
+const css=readFileSync(new URL("../app/globals.css",import.meta.url),"utf8");
+assert.ok(postcss.parse(css).nodes.length>100);
+console.log("UI server render: approved mobile home, game artwork, real test disclosure, sign-in and five navigation items verified.");
+console.log("CSS parse: passed. Interactive browser QA was not available in this environment.");
+const adminSource=readFileSync(new URL("../app/admin/panel.tsx",import.meta.url),"utf8");
+const adminOutput=ts.transpileModule(adminSource.replace('"./commerce-panel"','"./commerce-panel.mjs"').replace('"./services-panel"','"./services-panel.mjs"'),{compilerOptions:{jsx:ts.JsxEmit.ReactJSX,module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022}}).outputText;
+const commerceSource=readFileSync(new URL("../app/admin/commerce-panel.tsx",import.meta.url),"utf8");
+writeFileSync(new URL("../.sites-runtime/commerce-panel.mjs",import.meta.url),ts.transpileModule(commerceSource,{compilerOptions:{jsx:ts.JsxEmit.ReactJSX,module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022}}).outputText);
+writeFileSync(new URL("../.sites-runtime/services-panel.mjs",import.meta.url),ts.transpileModule(readFileSync(new URL("../app/admin/services-panel.tsx",import.meta.url),"utf8"),{compilerOptions:{jsx:ts.JsxEmit.ReactJSX,module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022}}).outputText);
+const adminFile=new URL("../.sites-runtime/admin-smoke.mjs",import.meta.url);writeFileSync(adminFile,adminOutput);
+const {default:AdminPanel}=await import(adminFile.href);
+const adminHtml=renderToStaticMarkup(React.createElement(AdminPanel,{name:"Salih"}));
+for(const value of ["Soru editörü","Destek ve ölçüm","Genel bakış","Oyuncular","Oyun turları","Haftalık lig","Oyun yönetimi","Gelir ve ödül","Canlı yarışmalar","Güvenlik","İşlem günlüğü","Yalnızca yönetici erişimi"])assert.ok(adminHtml.includes(value),`Missing admin UI: ${value}`);
+assert.ok(postcss.parse(readFileSync(new URL("../app/admin/admin.css",import.meta.url),"utf8")).nodes.length>50);
+console.log("Admin server render: eleven sections, owner identity, loading state and responsive CSS parse verified.");
+
+for(const [path,terms] of [["../components/wallet-panel.tsx",["Ödüllerim.","Cüzdanı yenile"]],["../components/competition-list.tsx",["Canlı yarışmalar.","Ortak süre, gizli seçim"]]]){
+ const target=new URL("../.sites-runtime/"+path.split("/").pop().replace(".tsx",".mjs"),import.meta.url);
+ writeFileSync(target,ts.transpileModule(readFileSync(new URL(path,import.meta.url),"utf8"),{compilerOptions:{jsx:ts.JsxEmit.ReactJSX,module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022}}).outputText);
+ const {default:Component}=await import(target.href),out=renderToStaticMarkup(React.createElement(Component));for(const term of terms)assert.ok(out.includes(term),term);
+}
+assert.ok(postcss.parse(readFileSync(new URL("../app/legal.css",import.meta.url),"utf8")).nodes.length>5);
+console.log("Wallet and competition pages: server render and CSS parsed; no interactive browser verification claimed.");
